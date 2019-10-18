@@ -6,4 +6,8 @@
 //  Copyright © 2019 Jessica Trinh. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class RageButton: UIViewController {
+    
+}

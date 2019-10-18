@@ -11,24 +11,40 @@
         <!--RageButton-->
         <scene sceneID="fyE-Cl-z2L">
             <objects>
-                <viewController title="RageButton" id="cqw-Ms-y9x" sceneMemberID="viewController">
+                <viewController title="RageButton" id="cqw-Ms-y9x" customClass="ViewController" customModule="MoodBasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAl-LQ-yjA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMS-2o-rYU">
-                                <rect key="frame" x="190" y="433" width="35" height="30"/>
+                                <rect key="frame" x="99" y="424" width="217" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Rage"/>
+                                <connections>
+                                    <action selector="rageButton:" destination="Ry3-Wh-Eol" eventType="touchUpInside" id="hXp-1E-Mdc"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHg-7K-o0H">
+                                <rect key="frame" x="72" y="217" width="271" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZFk-yl-puU"/>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="NHg-7K-o0H" id="k2x-Jb-Tp8"/>
+                        <outlet property="rageButton" destination="mMS-2o-rYU" id="Fkf-50-9Ef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEN-W4-8HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ry3-Wh-Eol" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="78" y="98"/>
+            <point key="canvasLocation" x="76.811594202898561" y="97.767857142857139"/>
         </scene>
     </scenes>
 </document>
