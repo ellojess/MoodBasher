@@ -41,6 +41,12 @@
                                     <action selector="resetButton:" destination="cqw-Ms-y9x" eventType="touchUpInside" id="DYm-Oy-Ev4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-K7-p1v">
+                                <rect key="frame" x="329" y="51" width="65" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Journal"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZFk-yl-puU"/>
@@ -54,6 +60,14 @@
                 <exit id="Ry3-Wh-Eol" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="76.811594202898561" y="97.767857142857139"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="pl6-ZH-6Xh">
+            <objects>
+                <viewControllerPlaceholder id="pga-Ib-wXV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1c1-ez-eBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="35"/>
         </scene>
     </scenes>
 </document>
