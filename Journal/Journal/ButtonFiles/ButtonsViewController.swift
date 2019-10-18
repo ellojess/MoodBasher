@@ -28,10 +28,16 @@ class ButtonsViewController: UIViewController {
     func layout() {
         if let rageButton = rageButton {
             rageButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            rageButton.layer.borderWidth = 1.5
+            rageButton.layer.borderWidth = 3.0
             rageButton.layer.cornerRadius = rageButton.frame.height / 2
             rageButton.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
             rageButton.setTitleColor(.white, for: .normal)
+            
+            rageButton.layer.shadowColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+            rageButton.layer.shadowOffset = CGSize(width: 9.0, height: 9.0)
+            rageButton.layer.masksToBounds = false
+            rageButton.layer.shadowRadius = 9.0
+            rageButton.layer.shadowOpacity = 2.5
             
             if let countLabel = countLabel {
                 countLabel.textColor = UIColor.white

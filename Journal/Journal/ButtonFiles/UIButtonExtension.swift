@@ -18,10 +18,10 @@ extension UIButton {
         shake.repeatCount = 2
         shake.autoreverses = true
         
-        let fromPoint = CGPoint(x: center.x - 10, y: center.y)
+        let fromPoint = CGPoint(x: center.x - 15, y: center.y)
         let fromValue = NSValue(cgPoint: fromPoint)
         
-        let toPoint = CGPoint(x: center.x + 10, y: center.y)
+        let toPoint = CGPoint(x: center.x + 15, y: center.y)
         let toValue = NSValue(cgPoint: toPoint)
         
         shake.fromValue = fromValue
