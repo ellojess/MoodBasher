@@ -19,10 +19,12 @@
 		4B1F0265221B6C6500EF3856 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0264221B6C6500EF3856 /* CoreDataStack.swift */; };
 		4B1F0267221B6F3100EF3856 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */; };
 		4B1F0269221B734C00EF3856 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0268221B734C00EF3856 /* EntryController.swift */; };
+		C0E70A09235944E6009645FC /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E70A08235944E6009645FC /* Button.storyboard */; };
+		C0E70A0E23594775009645FC /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70A0D23594775009645FC /* ButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B1F0246221B605300EF3856 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1F0246221B605300EF3856 /* MoodBasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodBasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1F0249221B605300EF3856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B1F024B221B605300EF3856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B1F024E221B605300EF3856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		4B1F0264221B6C6500EF3856 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		4B1F0268221B734C00EF3856 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		C0E70A08235944E6009645FC /* Button.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
+		C0E70A0D23594775009645FC /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,7 @@
 		4B1F0247221B605300EF3856 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B1F0246221B605300EF3856 /* Journal.app */,
+				4B1F0246221B605300EF3856 /* MoodBasher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,21 +72,47 @@
 		4B1F0248221B605300EF3856 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
-				4B1F0249221B605300EF3856 /* AppDelegate.swift */,
-				4B1F024B221B605300EF3856 /* ViewController.swift */,
-				4B1F024D221B605300EF3856 /* Main.storyboard */,
-				4B1F0262221B648300EF3856 /* EntryDetailViewController.swift */,
-				4B1F0260221B621F00EF3856 /* EntryTableViewCell.swift */,
-				4B1F025E221B615800EF3856 /* EntriesTableViewController.swift */,
+				C0E70A0723594488009645FC /* Storyboards */,
+				C0E70A0C2359475B009645FC /* ButtonFiles */,
+				C0E70A0B23594709009645FC /* JournalFiles */,
 				4B1F0253221B605400EF3856 /* Assets.xcassets */,
-				4B1F0255221B605400EF3856 /* LaunchScreen.storyboard */,
 				4B1F0258221B605400EF3856 /* Info.plist */,
-				4B1F0250221B605300EF3856 /* Journal.xcdatamodeld */,
-				4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */,
-				4B1F0268221B734C00EF3856 /* EntryController.swift */,
 				4B1F0264221B6C6500EF3856 /* CoreDataStack.swift */,
 			);
 			path = Journal;
+			sourceTree = "<group>";
+		};
+		C0E70A0723594488009645FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F024D221B605300EF3856 /* Main.storyboard */,
+				C0E70A08235944E6009645FC /* Button.storyboard */,
+				4B1F0255221B605400EF3856 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0E70A0B23594709009645FC /* JournalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F0249221B605300EF3856 /* AppDelegate.swift */,
+				4B1F024B221B605300EF3856 /* ViewController.swift */,
+				4B1F0262221B648300EF3856 /* EntryDetailViewController.swift */,
+				4B1F0260221B621F00EF3856 /* EntryTableViewCell.swift */,
+				4B1F025E221B615800EF3856 /* EntriesTableViewController.swift */,
+				4B1F0250221B605300EF3856 /* Journal.xcdatamodeld */,
+				4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */,
+				4B1F0268221B734C00EF3856 /* EntryController.swift */,
+			);
+			path = JournalFiles;
+			sourceTree = "<group>";
+		};
+		C0E70A0C2359475B009645FC /* ButtonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C0E70A0D23594775009645FC /* ButtonViewController.swift */,
+			);
+			path = ButtonFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +132,7 @@
 			);
 			name = Journal;
 			productName = Journal;
-			productReference = 4B1F0246221B605300EF3856 /* Journal.app */;
+			productReference = 4B1F0246221B605300EF3856 /* MoodBasher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E70A09235944E6009645FC /* Button.storyboard in Resources */,
 				4B1F0257221B605400EF3856 /* LaunchScreen.storyboard in Resources */,
 				4B1F0254221B605400EF3856 /* Assets.xcassets in Resources */,
 				4B1F024F221B605300EF3856 /* Main.storyboard in Resources */,
@@ -164,6 +195,7 @@
 				4B1F0267221B6F3100EF3856 /* Entry+Convenience.swift in Sources */,
 				4B1F024C221B605300EF3856 /* ViewController.swift in Sources */,
 				4B1F0263221B648300EF3856 /* EntryDetailViewController.swift in Sources */,
+				C0E70A0E23594775009645FC /* ButtonViewController.swift in Sources */,
 				4B1F024A221B605300EF3856 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +343,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
+				DEVELOPMENT_TEAM = 95TXKAQ9ZU;
 				INFOPLIST_FILE = Journal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulyi.Journal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jtjessicatrinh-gmail.com";
+				PRODUCT_NAME = MoodBasher;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,14 +361,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
+				DEVELOPMENT_TEAM = 95TXKAQ9ZU;
 				INFOPLIST_FILE = Journal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulyi.Journal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jtjessicatrinh-gmail.com";
+				PRODUCT_NAME = MoodBasher;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
