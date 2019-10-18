@@ -20,20 +20,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        countLabel.text = "0"
     }
     
     
     @IBAction func rageButton(_ sender: UIButton) {
-        if counting {
-            //stop counting
-        } else if !counting {
-            //start counting
-            rageButton.setTitle("Stop Counting", for: .normal)
-            //start timer
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
-        }
+        self.count += 1
+        self.countLabel.text = String(self.count)
     }
+    
+    
+    @IBAction func resetButton(_ sender: Any) {
+        self.count = 0
+        self.countLabel.text = String(self.count)
+    }
+    
     
     @objc func counter() -> Void {
         
