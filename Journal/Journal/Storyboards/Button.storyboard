@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ih4-Ja-JWx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,7 +11,7 @@
         <!--RageButton-->
         <scene sceneID="fyE-Cl-z2L">
             <objects>
-                <viewController title="RageButton" id="cqw-Ms-y9x" customClass="ViewController" customModule="MoodBasher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RageButton" id="cqw-Ms-y9x" customClass="ButtonsViewController" customModule="MoodBasher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAl-LQ-yjA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Rage"/>
                                 <connections>
+                                    <action selector="rageButton:" destination="cqw-Ms-y9x" eventType="touchUpInside" id="GyC-Ez-NB1"/>
                                     <action selector="rageButton:" destination="Ry3-Wh-Eol" eventType="touchUpInside" id="hXp-1E-Mdc"/>
                                 </connections>
                             </button>
@@ -33,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWn-TS-eDQ">
-                                <rect key="frame" x="26" y="51" width="50" height="36"/>
+                                <rect key="frame" x="20" y="149" width="50" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Reset"/>
@@ -42,24 +43,29 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-K7-p1v">
-                                <rect key="frame" x="329" y="51" width="65" height="36"/>
+                                <rect key="frame" x="329" y="149" width="65" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Journal"/>
+                                <connections>
+                                    <action selector="JournalTapped:" destination="cqw-Ms-y9x" eventType="touchUpInside" id="d1m-eW-Lv3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZFk-yl-puU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EwW-XS-aSW"/>
                     <connections>
                         <outlet property="countLabel" destination="NHg-7K-o0H" id="k2x-Jb-Tp8"/>
+                        <outlet property="journalB" destination="kpe-K7-p1v" id="bP0-tX-NGN"/>
                         <outlet property="rageButton" destination="mMS-2o-rYU" id="Fkf-50-9Ef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEN-W4-8HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ry3-Wh-Eol" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="35"/>
+            <point key="canvasLocation" x="4243.4782608695659" y="34.821428571428569"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="pl6-ZH-6Xh">
@@ -67,7 +73,25 @@
                 <viewControllerPlaceholder id="pga-Ib-wXV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1c1-ez-eBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="35"/>
+            <point key="canvasLocation" x="5206.521739130435" y="34.821428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RIH-zI-tPg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ih4-Ja-JWx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZN-l6-JOg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cqw-Ms-y9x" kind="relationship" relationship="rootViewController" id="8IT-zj-87C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1E-fl-yyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3333.3333333333335" y="34.821428571428569"/>
         </scene>
     </scenes>
 </document>

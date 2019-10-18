@@ -20,6 +20,7 @@
 		4B1F0267221B6F3100EF3856 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */; };
 		4B1F0269221B734C00EF3856 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0268221B734C00EF3856 /* EntryController.swift */; };
 		C095C5892359C50200442444 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C095C5882359C50200442444 /* UIButtonExtension.swift */; };
+		C095C58B235A37E000442444 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C095C58A235A37E000442444 /* ButtonsViewController.swift */; };
 		C0E70A09235944E6009645FC /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E70A08235944E6009645FC /* Button.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		4B1F0268221B734C00EF3856 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		C095C5882359C50200442444 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		C095C58A235A37E000442444 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		C0E70A08235944E6009645FC /* Button.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				4B1F024B221B605300EF3856 /* ViewController.swift */,
 				C095C5882359C50200442444 /* UIButtonExtension.swift */,
+				C095C58A235A37E000442444 /* ButtonsViewController.swift */,
 			);
 			path = ButtonFiles;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				4B1F0265221B6C6500EF3856 /* CoreDataStack.swift in Sources */,
 				C095C5892359C50200442444 /* UIButtonExtension.swift in Sources */,
 				4B1F025F221B615800EF3856 /* EntriesTableViewController.swift in Sources */,
+				C095C58B235A37E000442444 /* ButtonsViewController.swift in Sources */,
 				4B1F0261221B621F00EF3856 /* EntryTableViewCell.swift in Sources */,
 				4B1F0269221B734C00EF3856 /* EntryController.swift in Sources */,
 				4B1F0252221B605300EF3856 /* Journal.xcdatamodeld in Sources */,

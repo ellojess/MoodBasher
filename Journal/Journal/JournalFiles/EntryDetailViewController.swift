@@ -40,10 +40,8 @@ class EntryDetailViewController: UIViewController {
         textField.text = entry?.title
         textView.text = entry?.bodyText
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         updateViews()
     }
     

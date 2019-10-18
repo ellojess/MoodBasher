@@ -6,17 +6,17 @@
 //  Copyright © 2019 Jessica Trinh. All rights reserved.
 //
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
-
-
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var rageButton: UIButton!
     
     var count: Int = 0
     var counting: Bool = false
     var timer: Timer = Timer()
+    var b = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
