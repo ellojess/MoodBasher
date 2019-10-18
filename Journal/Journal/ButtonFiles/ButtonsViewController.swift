@@ -22,6 +22,18 @@ class ButtonsViewController: UIViewController {
         super.viewDidLoad()
         
          countLabel.text = "0"
+        layout()
+    }
+    func layout() {
+        if let rageButton = rageButton {
+            rageButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            rageButton.layer.borderWidth = 1.5
+            rageButton.layer.cornerRadius = rageButton.frame.height / 2
+            rageButton.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+            rageButton.setTitleColor(.white, for: .normal)
+            
+            
+        }
     }
     
     @IBAction func rageButton(_ sender: UIButton) {
