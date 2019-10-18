@@ -21,7 +21,8 @@ class ButtonsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         countLabel.text = "0"
+        countLabel.text = "0"
+    
         layout()
     }
     func layout() {
@@ -32,7 +33,9 @@ class ButtonsViewController: UIViewController {
             rageButton.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
             rageButton.setTitleColor(.white, for: .normal)
             
-            
+            if let countLabel = countLabel {
+                countLabel.textColor = UIColor.white
+            }
         }
     }
     
