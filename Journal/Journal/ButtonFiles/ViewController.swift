@@ -20,13 +20,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         countLabel.text = "0"
     }
     
     
     @IBAction func rageButton(_ sender: UIButton) {
-        self.count += 1
+        sender.shake()
+        self.count+=1
         self.countLabel.text = String(self.count)
     }
     

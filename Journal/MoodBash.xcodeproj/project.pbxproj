@@ -19,8 +19,8 @@
 		4B1F0265221B6C6500EF3856 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0264221B6C6500EF3856 /* CoreDataStack.swift */; };
 		4B1F0267221B6F3100EF3856 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */; };
 		4B1F0269221B734C00EF3856 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1F0268221B734C00EF3856 /* EntryController.swift */; };
+		C095C5892359C50200442444 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C095C5882359C50200442444 /* UIButtonExtension.swift */; };
 		C0E70A09235944E6009645FC /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E70A08235944E6009645FC /* Button.storyboard */; };
-		C0E70A0E23594775009645FC /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70A0D23594775009645FC /* ButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		4B1F0264221B6C6500EF3856 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4B1F0266221B6F3100EF3856 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		4B1F0268221B734C00EF3856 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		C095C5882359C50200442444 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		C0E70A08235944E6009645FC /* Button.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
-		C0E70A0D23594775009645FC /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				4B1F0249221B605300EF3856 /* AppDelegate.swift */,
-				4B1F024B221B605300EF3856 /* ViewController.swift */,
 				4B1F0262221B648300EF3856 /* EntryDetailViewController.swift */,
 				4B1F0260221B621F00EF3856 /* EntryTableViewCell.swift */,
 				4B1F025E221B615800EF3856 /* EntriesTableViewController.swift */,
@@ -110,7 +109,8 @@
 		C0E70A0C2359475B009645FC /* ButtonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				C0E70A0D23594775009645FC /* ButtonViewController.swift */,
+				4B1F024B221B605300EF3856 /* ViewController.swift */,
+				C095C5882359C50200442444 /* UIButtonExtension.swift */,
 			);
 			path = ButtonFiles;
 			sourceTree = "<group>";
@@ -188,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1F0265221B6C6500EF3856 /* CoreDataStack.swift in Sources */,
+				C095C5892359C50200442444 /* UIButtonExtension.swift in Sources */,
 				4B1F025F221B615800EF3856 /* EntriesTableViewController.swift in Sources */,
 				4B1F0261221B621F00EF3856 /* EntryTableViewCell.swift in Sources */,
 				4B1F0269221B734C00EF3856 /* EntryController.swift in Sources */,
@@ -195,7 +196,6 @@
 				4B1F0267221B6F3100EF3856 /* Entry+Convenience.swift in Sources */,
 				4B1F024C221B605300EF3856 /* ViewController.swift in Sources */,
 				4B1F0263221B648300EF3856 /* EntryDetailViewController.swift in Sources */,
-				C0E70A0E23594775009645FC /* ButtonViewController.swift in Sources */,
 				4B1F024A221B605300EF3856 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
